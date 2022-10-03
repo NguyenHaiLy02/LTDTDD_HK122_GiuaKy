@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/textUser"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edit_text"
+        android:hint="UserName"
+        android:paddingLeft="20dp"
+        android:textSize="22dp" />
+    <EditText
+        android:id="@+id/textPass"
+        android:layout_below="@+id/textUser"
+        android:layout_marginTop="35dp"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:hint="PassWord"
+        android:textSize="22dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/bg_edit_text"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/textviewForget"
+        android:layout_below="@id/textPass"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password? "
+        android:textSize="20dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textviewForget"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_button_signin_sigup"
+        android:text="SIGNIN"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
