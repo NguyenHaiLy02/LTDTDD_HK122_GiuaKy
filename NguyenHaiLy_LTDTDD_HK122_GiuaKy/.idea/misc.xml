@@ -3,6 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LTDTDD_HK122_GiuaKy/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.166" />
+        <entry key="..\:/LTDTDD_HK122_GiuaKy/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/bg_button_signin_sigup.xml" value="0.166" />
+        <entry key="..\:/LTDTDD_HK122_GiuaKy/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/bg_edit_text.xml" value="0.166" />
+        <entry key="..\:/LTDTDD_HK122_GiuaKy/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/bg_main.xml" value="0.166" />
+        <entry key="..\:/LTDTDD_HK122_GiuaKy/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/bg_view.xml" value="0.166" />
+        <entry key="..\:/LTDTDD_HK122_GiuaKy/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.166" />
+        <entry key="..\:/LTDTDD_HK122_GiuaKy/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.166" />
+        <entry key="..\:/LTDTDD_HK122_GiuaKy/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/ic_baseline_password_24.xml" value="0.166" />
+        <entry key="..\:/LTDTDD_HK122_GiuaKy/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/ic_baseline_vpn_key_24.xml" value="0.166" />
+        <entry key="..\:/LTDTDD_HK122_GiuaKy/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/ic_launcher_background.xml" value="0.166" />
+        <entry key="..\:/LTDTDD_HK122_GiuaKy/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/LTDTDD_HK122_GiuaKy/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/login_tab_fragment.xml" value="0.1796875" />
+        <entry key="..\:/LTDTDD_HK122_GiuaKy/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/sigin_tab_fragment.xml" value="0.1796875" />
+        <entry key="..\:/LTDTDD_HK122_GiuaKy/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/signin_tab_fragment.xml" value="0.1796875" />
+        <entry key="..\:/LTDTDD_HK122_GiuaKy/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/signup_tab_fragment.xml" value="0.22" />
         <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1105" />
         <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/bg_button_signin_sigup.xml" value="0.121" />
         <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/bg_edit_text.xml" value="0.121" />

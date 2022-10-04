@@ -2,7 +2,6 @@ package com.example.nguyenhaily_ltdtdd_hk122_giuaky;
 
 
 
-import android.content.Context;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -10,30 +9,41 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 public class SigninAdapter extends FragmentPagerAdapter {
 
-    private Context context;
+
     int totalTabs;
 
-    public SigninAdapter(FragmentManager fm, Context context, int totalTabs){
-        super(fm);
-        this.context = context;
-        this.totalTabs = totalTabs;
+    public SigninAdapter(FragmentManager fm, int totalTabs){
+        super(fm,totalTabs);
+
     }
 
     @Override
     public int getCount() {
-        return totalTabs;
+        return 2;
     }
 
     public Fragment getItem(int position){
         switch (position){
             case 0:
-                SigninTabFragment signinTabFragment = new SigninTabFragment();
-                return signinTabFragment;
+
+                return new SigninTabFragment();
             case 1:
-                SignupTabFragment signupTabFragment= new SignupTabFragment();
-                return signupTabFragment;
+
+                return new SignupTabFragment();
             default:
-                return  null;
+                return  new SignupTabFragment();
         }
+    }
+    public CharSequence getPageTitle(int position) {
+        String title ="";
+        switch (position){
+            case 0:
+                title ="SIGN IN";
+                break;
+            case 1:
+                title ="SIGN UP";
+                break;
+        }
+        return title;
     }
 }

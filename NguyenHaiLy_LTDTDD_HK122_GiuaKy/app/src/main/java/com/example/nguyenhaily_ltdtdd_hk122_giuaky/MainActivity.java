@@ -1,6 +1,7 @@
 package com.example.nguyenhaily_ltdtdd_hk122_giuaky;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
@@ -24,10 +25,11 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("SignUp"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
-        final SigninAdapter adapter = new SigninAdapter(getSupportFragmentManager(),this,tabLayout.getTabCount());
+        final SigninAdapter adapter = new SigninAdapter(getSupportFragmentManager(),FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         viewPager.setAdapter(adapter);
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.setupWithViewPager(viewPager);
 
 
     }

@@ -12,36 +12,67 @@
         android:background="@drawable/bg_edit_text"
         android:hint="UserName"
         android:paddingLeft="20dp"
-        android:textSize="22dp" />
+        android:textSize="22dp"
+        android:drawableStart="@drawable/ic_baseline_account_circle_24"
+        android:drawablePadding="10dp"
+        />
+
     <EditText
         android:id="@+id/textPass"
-        android:layout_below="@+id/textUser"
-        android:layout_marginTop="35dp"
         android:layout_width="360dp"
         android:layout_height="50dp"
-        android:hint="PassWord"
-        android:textSize="22dp"
-        android:paddingLeft="20dp"
-        android:background="@drawable/bg_edit_text"
+        android:layout_below="@+id/textUser"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_edit_text"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"
+        android:hint="PassWord"
+        android:paddingLeft="20dp"
+        android:textSize="22dp" />
+
     <TextView
         android:id="@+id/textviewForget"
-        android:layout_below="@id/textPass"
-        android:layout_marginLeft="210dp"
-        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:text="Forget Password? "
-        android:textSize="20dp"
-        />
+        android:textColor="@color/pink"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textviewOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewForget"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Or"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textviewNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewOR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="New User? Sign up now "
+        android:textColor="@color/pink"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="360dp"
         android:layout_height="50dp"
         android:layout_below="@+id/textviewForget"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/bg_button_signin_sigup"
         android:text="SIGNIN"
         android:textColor="@color/white"
