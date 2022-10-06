@@ -1,32 +1,30 @@
 package com.example.nguyenhaily_ltdtdd_hk122_giuaky;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Button;
+
 
 import androidx.fragment.app.Fragment;
 
 public class SigninTabFragment extends Fragment {
-    TextView tvNewuser;
+
+    Button signin;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.signin_tab_fragment,container,false);
+        signin = root.findViewById(R.id.signin);
 
-        tvNewuser = root.findViewById(R.id.textviewNewUser);
-        tvNewuser.setOnClickListener(new View.OnClickListener() {
+        signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),SignupTabFragment.class);
+                Intent intent = new Intent(getActivity(),Profile.class);
                 startActivity(intent);
             }
         });
-
         return root;
-
-
-
     }
 }
