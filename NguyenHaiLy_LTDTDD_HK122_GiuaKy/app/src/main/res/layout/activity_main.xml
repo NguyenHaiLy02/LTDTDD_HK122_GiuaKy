@@ -4,57 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/body_container"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/relativelayout1"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/bg_main">
-
-        <ImageView
-            android:id="@+id/image1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="30dp"
-            android:src="@drawable/logo_readbook"
-
-            />
-
-        <TextView
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            android:layout_toRightOf="@+id/image1"
-            android:text="Welcom to Haily's ReadBook"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            />
-    </RelativeLayout>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/view"
-        android:layout_marginTop="150dp"
+    <FrameLayout
+        android:id="@+id/frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
+        android:layout_above="@id/navigationView"
         />
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="200dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
 
-        />
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:background="@drawable/bg_view"
-        />
-
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_button_signin_sigup"
+        android:elevation="2dp"
+        app:itemIconSize="40dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/item_menu" />
 </RelativeLayout>

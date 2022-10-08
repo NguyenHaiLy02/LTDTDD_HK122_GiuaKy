@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_profile">
+
+        <TextView
+            android:id="@+id/tvhello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="HELLO READERS"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="380dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tvhello"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:drawableEnd="@drawable/ic_baseline_search_24" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_menu_24" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/relativelayout1"
+        android:id="@+id/relativelayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rllayout1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/bg_edit_text"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/imageChild"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icons_children" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageChild"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Children's books"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rllayout2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/rllayout1"
+            android:background="@drawable/bg_edit_text"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/imageJoke"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icons_truyencuoi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageJoke"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Funny's books"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rllayout3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/rllayout1"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_edit_text"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/imageDetective"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icons_detective" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageDetective"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Detective story"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/rllayout2"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/rllayout3"
+            android:background="@drawable/bg_edit_text"
+            android:elevation="5dp">
+
+            <ImageView
+                android:id="@+id/imagePolitical"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icons_political" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagePolitical"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Political book"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativelayout3"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/relativelayout2"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_nen">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons_heart"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:text="Are you lonely?Do not worry.Every book is ready to make friends with you!"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+</RelativeLayout>

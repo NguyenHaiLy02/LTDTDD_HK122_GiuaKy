@@ -28,13 +28,39 @@
         <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1105" />
         <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/bg_button_signin_sigup.xml" value="0.121" />
         <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/bg_edit_text.xml" value="0.121" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/bg_image.xml" value="0.1535" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/bg_main.xml" value="0.1535" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/bg_nen.xml" value="0.123" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/bg_profile.xml" value="0.1535" />
         <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/bg_view.xml" value="0.1" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/circle.xml" value="0.1535" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/circle_border.xml" value="0.1535" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.123" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/ic_baseline_navigate_next_24.xml" value="0.1535" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1615" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/ic_baseline_vpn_key_24.xml" value="0.1535" />
         <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1105" />
-        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/drawable/item_selector.xml" value="0.1535" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout-land/fragment_list_book.xml" value="0.16770833333333332" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout-land/fragment_listbook.xml" value="0.1" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/activity_2.xml" value="0.1796875" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/activity_list_book_fragment.xml" value="0.16875" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/activity_login.xml" value="0.1796875" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/activity_main2.xml" value="0.22" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/activity_profile.xml" value="0.22" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/dong_sach.xml" value="0.1" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/fragment_blank.xml" value="0.165625" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/fragment_danh_sach.xml" value="0.1" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/fragment_favourite.xml" value="0.17864583333333334" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/fragment_list_book.xml" value="0.1" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/fragment_profile.xml" value="0.17864583333333334" />
         <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/login_tab_fragment.xml" value="0.17864583333333334" />
         <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/sigin_tab_fragment.xml" value="0.1796875" />
-        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/signin_tab_fragment.xml" value="0.1" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/signin_tab_fragment.xml" value="0.16666666666666666" />
         <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/layout/signup_tab_fragment.xml" value="0.1796875" />
+        <entry key="..\:/NguyenHaiLy_LTDTDD_HK122_GiuaKy/app/src/main/res/menu/item_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

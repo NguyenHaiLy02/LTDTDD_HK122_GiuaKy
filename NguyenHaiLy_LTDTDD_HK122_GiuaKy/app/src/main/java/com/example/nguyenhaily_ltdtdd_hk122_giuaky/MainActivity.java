@@ -1,36 +1,47 @@
 package com.example.nguyenhaily_ltdtdd_hk122_giuaky;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.viewpager.widget.ViewPager;
+import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.WindowManager;
 
-import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
-
-    TabLayout tabLayout;
-    ViewPager viewPager;
+    BottomNavigationView bottomNavigationView ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tabLayout = findViewById(R.id.tab_layout);
-        viewPager = findViewById(R.id.view_pager);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        tabLayout.addTab(tabLayout.newTab().setText("SignIn"));
-        tabLayout.addTab(tabLayout.newTab().setText("SignUp"));
-        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+        bottomNavigationView = findViewById(R.id.navigationView);
+        getSupportFragmentManager().beginTransaction().replace(R.id.body_container,new HomeFragment()).commit();
+        bottomNavigationView.setSelectedItemId(R.id.nav_home);
 
-        final SigninAdapter adapter = new SigninAdapter(getSupportFragmentManager(),FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        viewPager.setAdapter(adapter);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Fragment fragment = null;
 
-        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        tabLayout.setupWithViewPager(viewPager);
+                switch (item.getItemId()){
+                    case R.id.nav_home:
+                        fragment = new HomeFragment();
+                        break;
 
-
+                    case R.id.nav_profile:
+                        fragment = new ProfileFragment();
+                        break;
+                }
+                getSupportFragmentManager().beginTransaction().replace(R.id.body_container,fragment).commit();
+                return true;
+            }
+        });
     }
 }
