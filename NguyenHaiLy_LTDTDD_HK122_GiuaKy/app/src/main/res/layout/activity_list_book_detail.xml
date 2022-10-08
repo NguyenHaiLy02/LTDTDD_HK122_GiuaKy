@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_white_pink">
+
+    <RelativeLayout
+        android:id="@+id/tvdanhmuc"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/bg_profile">
+
+        <ImageButton
+            android:id="@+id/btReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icons_return" />
+
+        <TextView
+            android:id="@+id/tvdanhsach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="READ BOOKS"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_menu_24" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageviewHinh"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tvdanhmuc"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textviewTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvdanhmuc"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/imageviewHinh"
+        android:text="Tên sách"
+        android:textColor="@color/purple_700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textviewTacGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewTen"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/imageviewHinh"
+        android:text="Tên tác giả"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/chuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageviewHinh"
+        android:layout_marginLeft="20dp"
+        android:text="Chương:1"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="330dp"
+        android:layout_below="@+id/chuong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edit_text">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="“Khi cánh cửa hạnh phúc đóng lại, một cánh cửa khác mở ra, ta thường chú ý vào cánh cửa đang đóng mà không thấy được một cái khác đang mở ra.”
+“Đừng bao giờ nói lời tạm biệt nếu bạn vẫn muốn cố gắng, đừng bao giờ bỏ cuộc nếu bạn vẫn cảm thấy có thể tiếp tục. Đừng bao giờ nói bạn không còn yêu ai nữa nếu ánh mắt của ai đó vẫn còn có thể giữ chân bạn.”
+“Cuộc sống thường không chật hẹp trong những ngôi nhà, trên những con đường, góc phố mà chính trong những định kiến và suy nghĩ của con người.”"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_button_signin_sigup"
+        android:elevation="2dp"
+        app:itemIconSize="40dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/item_menu" />
+</RelativeLayout>

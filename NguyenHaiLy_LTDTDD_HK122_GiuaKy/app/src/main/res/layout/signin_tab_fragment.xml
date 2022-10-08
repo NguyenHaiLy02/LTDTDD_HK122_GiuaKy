@@ -15,6 +15,7 @@
         android:hint="UserName"
         android:paddingLeft="20dp"
         android:textSize="22dp" />
+
     <EditText
         android:id="@+id/textPass"
         android:layout_width="360dp"
@@ -49,11 +50,67 @@
         android:layout_height="50dp"
         android:layout_below="@+id/savepass"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/bg_button_signin_sigup"
         android:text="SIGNIN"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvForgot"
+        android:layout_below="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="24sp"
+        android:textColor="@color/teal_700"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/tvOr"
+        android:layout_below="@+id/tvForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or"
+        android:textSize="24sp"
+        android:textColor="@color/grey"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOr"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:id="@+id/btFb"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icons_fb"
+            android:elevation="5dp"
+            />
+    <ImageButton
+        android:id="@+id/btgg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icons_gg"
+        android:layout_toRightOf="@+id/btFb"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/transparent"
+        />
+    <ImageButton
+        android:id="@+id/bttt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icons_twitter"
+        android:layout_toRightOf="@+id/btgg"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/transparent"
+        />
+
+    </RelativeLayout>
 
 </RelativeLayout>

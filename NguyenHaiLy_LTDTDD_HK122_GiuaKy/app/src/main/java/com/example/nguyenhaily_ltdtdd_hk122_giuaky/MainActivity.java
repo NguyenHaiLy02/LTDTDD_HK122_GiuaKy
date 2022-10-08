@@ -29,12 +29,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment fragment = null;
-
+                if(item.getItemId() == R.id.nav_list){
+                    Intent intent=new Intent(getApplicationContext(),ListBook.class);
+                    startActivity(intent);
+                }
                 switch (item.getItemId()){
                     case R.id.nav_home:
                         fragment = new HomeFragment();
                         break;
-
                     case R.id.nav_profile:
                         fragment = new ProfileFragment();
                         break;

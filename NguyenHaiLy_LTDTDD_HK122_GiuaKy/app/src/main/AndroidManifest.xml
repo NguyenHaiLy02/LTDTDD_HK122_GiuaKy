@@ -14,6 +14,15 @@
         android:theme="@style/Theme.NguyenHaiLy_LTDTDD_HK122_GiuaKy"
         tools:targetApi="31">
         <activity
+            android:name=".ListBookDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ListBook"
+            android:exported="false" />
+        <activity
+            android:name=".ListBookFragment"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity

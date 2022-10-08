@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="@drawable/bg_profile">
+
         <RelativeLayout
             android:id="@+id/imageProfile"
             android:layout_width="wrap_content"
@@ -42,10 +43,14 @@
             android:textSize="24sp" />
 
         <ImageButton
+            android:id="@+id/btlogout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@android:color/transparent"
             android:padding="7dp"
             android:src="@drawable/icons_logout" />
@@ -133,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/imageSetting"
                 android:layout_centerHorizontal="true"
-                android:text="Setting"
+                android:text="EditProfile"
                 android:textSize="18dp" />
         </RelativeLayout>
 
@@ -237,7 +242,7 @@
                         android:layout_height="40dp"
                         android:drawableStart="@drawable/icons_passwordshow"
                         android:drawablePadding="10dp"
-                        android:text="1234"
+                        android:text="2050531200231"
                         android:textColor="#000"
                         android:textSize="22sp" />
 
@@ -246,15 +251,22 @@
                         android:layout_height="2dp"
                         android:background="@color/blue" />
 
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="200dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="20dp"
+                    <com.google.android.material.bottomnavigation.BottomNavigationView
+                        android:id="@+id/navigationView"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"
                         android:background="@drawable/bg_button_signin_sigup"
-                        android:text="Update Profile"
-                        android:textColor="@color/white"
-                        android:textSize="20sp" />
+                        android:elevation="2dp"
+                        app:itemIconSize="40dp"
+                        app:itemIconTint="@drawable/item_selector"
+                        app:itemRippleColor="@android:color/transparent"
+                        app:labelVisibilityMode="labeled"
+                        app:menu="@menu/item_menu" />
                 </LinearLayout>
             </RelativeLayout>
         </RelativeLayout>

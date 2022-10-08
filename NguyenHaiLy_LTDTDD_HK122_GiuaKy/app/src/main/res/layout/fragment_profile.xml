@@ -4,51 +4,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:id="@+id/viewProfile1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_profile">
+
         <RelativeLayout
-            android:id="@+id/viewProfile1"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@drawable/bg_profile">
-            <RelativeLayout
-                android:id="@+id/imageProfile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/circle_border">
+            android:id="@+id/imageProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/circle_border">
 
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginStart="9dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="9dp"
-                    android:layout_marginBottom="9dp"
-                    android:background="@drawable/circle"
-                    android:src="@drawable/ic_base_line_person_24" />
-            </RelativeLayout>
-
-            <TextView
-                android:id="@+id/tvTen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imageProfile"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="5dp"
-                android:text="NGUYỄN HẢI LY"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_margin="10dp"
-                android:background="@android:color/transparent"
-                android:padding="7dp"
-                android:src="@drawable/icons_logout" />
-
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_base_line_person_24" />
         </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="NGUYỄN HẢI LY"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:padding="7dp"
+            android:src="@drawable/icons_logout" />
+
+    </RelativeLayout>
         <RelativeLayout
             android:layout_width="350dp"
             android:layout_centerHorizontal="true"
@@ -131,7 +133,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/imageSetting"
                         android:layout_centerHorizontal="true"
-                        android:text="Setting"
+                        android:text="EditProfile"
                         android:textSize="18dp" />
                 </RelativeLayout>
 
@@ -142,7 +144,6 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/bg_view">
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -224,7 +225,7 @@
                             android:layout_height="40dp"
                             android:drawableStart="@drawable/icons_passwordshow"
                             android:drawablePadding="10dp"
-                            android:text="1234"
+                            android:text="2050531200231"
                             android:textColor="#000"
                             android:textSize="22sp" />
                         <View
